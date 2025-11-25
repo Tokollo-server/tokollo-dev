@@ -9,17 +9,18 @@ const About = () => {
           
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              I'm a passionate developer who loves turning complex problems into simple, beautiful, and intuitive solutions. 
-              With a keen eye for design and a deep understanding of modern web technologies, I create experiences that users love.
+              Junior Web Developer skilled in the MERN stack (MongoDB, Express.js, React.js, Node.js) with hands-on 
+              experience building responsive web applications and REST APIs. Graduate of Stellenbosch University Web 
+              Development Bootcamp with a strong foundation in JavaScript, Git/GitHub, and modern frontend design.
             </p>
             
             <p>
-              When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, 
-              or sharing knowledge with the developer community.
+              Passionate about problem-solving, continuous learning, and contributing to collaborative development teams. 
+              Currently expanding skills in React Native for mobile app development.
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
-              {['React', 'TypeScript', 'Node.js', 'Tailwind'].map((skill) => (
+              {['React.js', 'Node.js', 'MongoDB', 'Express.js', 'JavaScript', 'Bootstrap', 'Shopify API', 'OpenAI'].map((skill) => (
                 <div 
                   key={skill}
                   className="p-4 rounded-lg bg-card border border-border hover:border-primary transition-all duration-300 text-center hover:scale-105"

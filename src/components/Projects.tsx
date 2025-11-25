@@ -4,25 +4,32 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management and secure payment processing.",
-    tags: ["React", "Node.js", "PostgreSQL"],
+    title: "AI Dropshipping Platform",
+    description: "Smart eCommerce platform with Shopify API integration, AI automation for product sourcing, pricing optimization, and OpenAI-powered customer service chatbot.",
+    tags: ["MERN Stack", "Shopify API", "OpenAI"],
     link: "#",
-    github: "#"
+    github: "https://github.com/Tokollo-server/ai-dropshipping"
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task management tool with real-time updates, file sharing, and team analytics.",
-    tags: ["TypeScript", "Firebase", "Tailwind"],
+    title: "CarInventory Web App",
+    description: "Full-stack CRUD application for managing car inventory with JWT authentication and secure API routes. Built with responsive UI using Bootstrap.",
+    tags: ["React.js", "Node.js", "MongoDB"],
     link: "#",
-    github: "#"
+    github: "https://github.com/Tokollo-server/carInventory.git"
   },
   {
-    title: "Analytics Dashboard",
-    description: "Beautiful and responsive analytics dashboard with interactive charts and data visualization.",
-    tags: ["React", "D3.js", "Express"],
+    title: "Weather Dashboard",
+    description: "Real-time weather app with API integration, city search functionality, and geolocation features. Designed with responsive layouts.",
+    tags: ["React.js", "WeatherAPI", "CSS"],
     link: "#",
-    github: "#"
+    github: "https://github.com/Tokollo-server/reactweather-app"
+  },
+  {
+    title: "iTunes Search App",
+    description: "Music search application using iTunes public API with dynamic search functionality and real-time API requests. Efficient state management.",
+    tags: ["React.js", "iTunes API", "JavaScript"],
+    link: "#",
+    github: "https://github.com/Tokollo-server/iTunes-searchengine-api.git"
   }
 ];
 
@@ -38,7 +45,7 @@ const Projects = () => {
             Some of my recent work that I'm proud of
           </p>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
               <Card 
                 key={index}

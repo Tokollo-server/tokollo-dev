@@ -10,11 +10,11 @@ const Hero = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight">
-          Creative Developer
+          Tokollo Mokalodise
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-          Crafting exceptional digital experiences through elegant code and thoughtful design
+          Junior MERN Developer building responsive web applications and REST APIs
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
