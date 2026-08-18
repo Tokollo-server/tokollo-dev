@@ -1,34 +1,38 @@
+const certifications = [
+  "Anthropic AI Fluency",
+  "Model Context Protocol (MCP)",
+  "Claude Code 101",
+  "Stellenbosch Web Dev Bootcamp",
+];
+
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4">
-      <div className="max-w-4xl mx-auto">
-        <div className="animate-slide-up">
-          <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 bg-gradient-accent bg-clip-text text-transparent">
-            About Me
-          </h2>
-          
-          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+    <section id="about" className="py-20 px-6">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-display font-bold mb-10">About &amp; Background</h2>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="md:col-span-2 space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Junior Web Developer skilled in the MERN stack (MongoDB, Express.js, React.js, Node.js) with hands-on 
-              experience building responsive web applications and REST APIs. Graduate of Stellenbosch University Web 
-              Development Bootcamp with a strong foundation in JavaScript, Git/GitHub, and modern frontend design.
+              I am a full-stack developer and machine learning intern based in South Africa, focusing
+              on MERN stack development, Python, and data pipeline verification. My background
+              includes web development experience at Stellenbosch University and machine learning
+              engineering at FlyRank AI.
             </p>
-            
             <p>
-              Passionate about problem-solving, continuous learning, and contributing to collaborative development teams. 
-              Currently expanding skills in React Native for mobile app development.
+              I emphasize proof over assertion&mdash;whether that means verifying SQL data contracts
+              against target leakage or isolating how prompt structures change LLM code generation
+              outputs.
             </p>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
-              {['React.js', 'Node.js', 'MongoDB', 'Express.js', 'JavaScript', 'Bootstrap', 'Shopify API', 'OpenAI'].map((skill) => (
-                <div 
-                  key={skill}
-                  className="p-4 rounded-lg bg-card border border-border hover:border-primary transition-all duration-300 text-center hover:scale-105"
-                >
-                  <span className="font-display font-semibold text-foreground">{skill}</span>
-                </div>
+          </div>
+
+          <div className="rounded-xl border border-border bg-card p-6">
+            <h3 className="font-display font-semibold mb-4 text-foreground">Certifications</h3>
+            <ul className="space-y-3 text-sm text-muted-foreground">
+              {certifications.map((c) => (
+                <li key={c}>&bull; {c}</li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
       </div>
