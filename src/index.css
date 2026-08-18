@@ -8,42 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 17% 12%;
-    --foreground: 210 40% 98%;
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
 
-    --card: 220 15% 16%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 220 15% 16%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 188 94% 55%;
-    --primary-foreground: 220 17% 12%;
+    --primary: 200 98% 39%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 35 88% 60%;
-    --secondary-foreground: 220 17% 12%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 220 15% 25%;
-    --muted-foreground: 210 20% 65%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 188 94% 55%;
-    --accent-foreground: 220 17% 12%;
+    --accent: 200 98% 39%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 15% 25%;
-    --input: 220 15% 25%;
-    --ring: 188 94% 55%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 200 98% 39%;
 
     --radius: 0.75rem;
 
-    /* Custom portfolio tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(188 94% 55%), hsl(188 94% 65%));
-    --gradient-accent: linear-gradient(135deg, hsl(35 88% 60%), hsl(35 88% 70%));
-    --shadow-glow: 0 0 60px hsl(188 94% 55% / 0.3);
+    /* Terminal / code container */
+    --code-bg: 222 47% 11%;
+    --code-fg: 210 40% 96%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(200 98% 39%), hsl(200 98% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(200 98% 39%), hsl(190 90% 45%));
+    --shadow-glow: 0 1px 2px hsl(222 47% 11% / 0.04), 0 8px 24px -12px hsl(222 47% 11% / 0.12);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
+
 }
 
 @layer base {

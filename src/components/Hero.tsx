@@ -3,13 +3,13 @@ import { ArrowRight, Github } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-[85vh] flex items-center px-6 pt-32 pb-20">
+    <section id="home" className="min-h-[80vh] flex items-center px-6 pt-32 pb-20">
       <div className="max-w-5xl mx-auto w-full animate-fade-in">
-        <p className="text-primary text-sm font-medium tracking-wide uppercase mb-6">
-          Full-Stack Developer &amp; Machine Learning Intern @ FlyRank AI
-        </p>
+        <span className="inline-block px-3 py-1 mb-8 text-xs font-medium rounded-full border border-border bg-card text-primary">
+          Full-Stack Developer &amp; ML Intern @ FlyRank AI
+        </span>
 
-        <h1 className="text-4xl md:text-6xl font-display font-bold mb-8 leading-tight max-w-4xl">
+        <h1 className="text-4xl md:text-6xl font-display font-bold mb-8 leading-[1.1] tracking-tight max-w-4xl">
           I write the feature, then I write the trap that would prove it&apos;s cheating.
         </h1>
 
@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4">
           <Button
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-glow transition-all duration-300"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300"
             onClick={() => document.getElementById("work")?.scrollIntoView({ behavior: "smooth" })}
           >
             See How I Proved It
@@ -30,7 +30,7 @@ const Hero = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-muted-foreground/20 hover:border-primary hover:text-primary transition-all duration-300"
+            className="border-border bg-card hover:border-primary hover:text-primary transition-all duration-300"
             asChild
           >
             <a href="https://github.com/Tokollo-server" target="_blank" rel="noreferrer">
