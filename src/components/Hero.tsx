@@ -1,7 +1,6 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Download } from "lucide-react";
-import cvAsset from "@/assets/cv.pdf.asset.json";
-
 
 const Hero = () => {
   return (
@@ -46,7 +45,12 @@ const Hero = () => {
             className="border-border bg-card hover:border-primary hover:text-primary transition-all duration-300"
             asChild
           >
-            <a href={cvAsset.url} download="CV_Tokollo_Mokalodise.pdf">
+            <a 
+              href="/CV_Tokollo_Mokalodise_Randburg_.pdf" 
+              download="CV_Tokollo_Mokalodise_Randburg_.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Download className="w-4 h-4 mr-2" />
               Download CV
             </a>
