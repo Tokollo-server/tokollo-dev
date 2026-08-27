@@ -25,6 +25,8 @@ const Contact = () => {
               key={l.label}
               href={l.href}
               {...(l.external ? { target: "_blank", rel: "noreferrer" } : {})}
+              {...(l.download ? { download: "CV_Tokollo_Mokalodise.pdf" } : {})}
+
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               {l.label}
