@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight, Github, Download } from "lucide-react";
+import cvAsset from "@/assets/cv.pdf.asset.json";
+
 
 const Hero = () => {
   return (
