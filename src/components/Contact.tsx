@@ -1,3 +1,5 @@
+import cvAsset from "@/assets/cv.pdf.asset.json";
+
 const links = [
   { label: "Email", href: "mailto:tokollomokalodise021@gmail.com", external: false },
   { label: "GitHub", href: "https://github.com/Tokollo-server", external: true },
@@ -6,7 +8,9 @@ const links = [
     href: "https://www.linkedin.com/in/tokollo-mokalodise/",
     external: true,
   },
+  { label: "Download CV", href: cvAsset.url, external: false, download: true },
 ];
+
 
 const Contact = () => {
   return (
