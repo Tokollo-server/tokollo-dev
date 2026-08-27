@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight, Github, Download } from "lucide-react";
+import cvAsset from "@/assets/cv.pdf.asset.json";
+
 
 const Hero = () => {
   return (
@@ -38,7 +40,19 @@ const Hero = () => {
               GitHub Profile
             </a>
           </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-border bg-card hover:border-primary hover:text-primary transition-all duration-300"
+            asChild
+          >
+            <a href={cvAsset.url} download="CV_Tokollo_Mokalodise.pdf">
+              <Download className="w-4 h-4 mr-2" />
+              Download CV
+            </a>
+          </Button>
         </div>
+
       </div>
     </section>
   );

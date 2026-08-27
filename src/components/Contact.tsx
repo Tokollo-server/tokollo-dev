@@ -1,12 +1,18 @@
+import cvAsset from "@/assets/cv.pdf.asset.json";
+
 const links = [
-  { label: "Email", href: "mailto:tokollomokalodise021@gmail.com", external: false },
-  { label: "GitHub", href: "https://github.com/Tokollo-server", external: true },
+  { label: "Email", href: "mailto:tokollomokalodise021@gmail.com", external: false, download: false },
+  { label: "GitHub", href: "https://github.com/Tokollo-server", external: true, download: false },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/tokollo-mokalodise/",
     external: true,
+    download: false,
   },
+  { label: "Download CV", href: cvAsset.url, external: false, download: true },
 ];
+
+
 
 const Contact = () => {
   return (
@@ -21,6 +27,8 @@ const Contact = () => {
               key={l.label}
               href={l.href}
               {...(l.external ? { target: "_blank", rel: "noreferrer" } : {})}
+              {...(l.download ? { download: "CV_Tokollo_Mokalodise.pdf" } : {})}
+
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               {l.label}
